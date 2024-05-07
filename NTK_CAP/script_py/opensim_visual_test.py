@@ -20,7 +20,7 @@ def update_geometry_paths_in_memory(model, new_geometry_dir):
                     geom.set_mesh_file(new_path)
 
     return model
-    
+
 def main(motfile, model_file,new_geometry_dir):
     time_data = osim.TimeSeriesTable(motfile)
     model = osim.Model(model_file)
