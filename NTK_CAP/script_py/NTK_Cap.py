@@ -410,11 +410,7 @@ def camera_Apose_record(config_path, save_path, patientID, date, button_capture=
         print("calibration 資料夾 不存在")
     
 
-    if os.path.exists(toml_file_path):
-        shutil.copy(toml_file_path, save_path_date)
-        print("已成功複製 Calib.toml")
-    else:
-        print("Calib.toml 不存在")
+
 
     if os.path.exists(time_file_path):
         with open(time_file_path, "r") as file:
